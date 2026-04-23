@@ -1,80 +1,63 @@
-🏥 Patient Management API (FastAPI)
-📌 Overview
+# 🏥 Patient Management API (FastAPI)
 
-This project is a Patient Management REST API built using FastAPI.
-It allows you to create, view, update, and sort patient records with strong data validation and automatic calculations like BMI and health verdict.
+A high-performance **REST API** built using FastAPI to manage patient records with **robust validation, computed health metrics, and clean architecture**.
 
-The API uses:
+---
 
-FastAPI for building high-performance APIs
+## 📌 Overview
 
-Pydantic (v2) for data validation and computed fields
+This project demonstrates how to build a **production-style backend API** using FastAPI and Pydantic.
 
-JSON file storage (patient.json) as a lightweight database
+It supports complete patient lifecycle management along with **automatic BMI calculation and health classification**, making it a practical example of real-world backend development.
 
-This project demonstrates real-world FastAPI best practices, including:
+---
 
-Proper request/response validation
+## 🚀 Features
 
-Computed fields
+### 🧾 Patient Management
+- Create new patient records  
+- View all patients  
+- Retrieve patient by ID  
+- Update existing patient details  
 
-CRUD operations
+---
 
-Clean API documentation (Swagger)
+### 📊 Smart Health Metrics
+- Automatic **BMI calculation**  
+- Health classification:
+  - Underweight  
+  - Normal  
+  - Obese  
 
-🚀 Features (What This API Does)
-✅ Patient Data Management
+---
 
-Add new patients
+### 🔎 Sorting & Querying
+- Sort patients by:
+  - Height  
+  - Weight  
+  - BMI  
+- Supports:
+  - Ascending (`asc`)  
+  - Descending (`desc`)  
 
-View all patients
+---
 
-View a single patient by ID
+### ✅ Data Validation
+- Age: **0–18 only**  
+- Gender: `male | female | others`  
+- Height & Weight: must be positive  
+- Prevents duplicate patient IDs  
 
-Update existing patient details
+---
 
-✅ Automatic Health Calculations
+## 🛠️ Tech Stack
 
-BMI is calculated automatically
+- **Python 3.9+**
+- **FastAPI**
+- **Pydantic v2**
+- **Uvicorn**
+- **JSON (File-based storage)**
 
-Health verdict is derived from BMI:
+---
 
-Underweight
-
-Normal
-
-Obese
-
-✅ Sorting & Filtering
-
-Sort patients by:
-
-Height
-
-Weight
-
-BMI
-
-Supports ascending and descending order
-
-✅ Strong Validation
-
-Age restricted to 0–18
-
-Gender restricted to male / female / others
-
-Height & weight must be positive
-
-Duplicate patient IDs are rejected
-
-🛠️ Tech Stack
-
-Python 3.9+
-
-FastAPI
-
-Pydantic v2
-
-Uvicorn
-
-JSON file storage
+## 📂 Project Structure
